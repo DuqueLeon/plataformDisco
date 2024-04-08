@@ -16,7 +16,7 @@
     >
       <div class="text-gray-100 text-xl">
         <span class="cursor-pointer">
-          <a href="index.html">
+          <a href="../index.html">
             <img
               class="h-32 inline"
               src="../assets/imagenes/logo-firma.png"
@@ -42,14 +42,23 @@
             >AGREGAR ALBUM</a
           >
         </li>
+
         <li class="mx-4 my-6 my-0">
-          <a href="../pages/tours.html" class="text-xl hover:text-amber-500 duration-300"
+          <a
+            href="../pages/addSongs.html"
+            class="text-base text-gray-400 hover:text-amber-500 duration-300 font-serif "
+            >AGREGAR CANCION</a
+          >
+        </li>
+
+        <li class="mx-4 my-6 my-0">
+          <a href="../pages/tours.html" class="text-xl hover:text-amber-500 duration-300 font-serif"
             >PROXIMOS SHOWS</a
           >
         </li>
         <li class="mx-4 my-6 my-0">
           <a
-            href="../../pages/login.html"
+            href="../pages/login.html"
             class="text-amber-500 bg-black rounded text-xl hover:bg-transparent duration-300 font-serif px-6 py-2 mx-4"
             >SALIR</a
           >
@@ -60,34 +69,81 @@
     <main>
       <div id="contenedor-album" class="flex justify-around content-center h-screen">
 
-        <div id="contenedor-izq" class="text-center text-white justify-center content-center">
+        <div class="text-center text-white justify-center content-center">
 
-            <h2 class="text-2xl my-4">AGREGAR ALBUM</h2>
+            <div class="text-2xl my-4">AGREGAR ALBUM</div>
 
             <div class="shadow-2xl p-4">
-              <input type="text" placeholder="Titulo">
-              <input type="date" placeholder="Fecha">
-                             
+
+              <form action="">
+                <div>
+
+                  <label for="">
+                  Titulo del Album
+                </label>
+
+                </div>
+                <div>
+                  <input class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 text-black"
+                  type="text" 
+                  placeholder="Titulo">
+                  
+                </div>
+
+                <div>
+
+                  <label for="">
+                  Año de lanzamiento
+                </label>
+
+                </div>
+                <div>
+                  <input class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 text-black"
+                  type="date" 
+                  placeholder="Fecha">
+                </div>
+
+                <div>
+                  <label for="">
+                    Descripcion
+                  </label>
+                </div>
+
+                <div>
+                  <textarea cols="50" rows="3" class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600 text-black"></textarea>
+                </div>
+
+                <div>
+                  <label>
+                    Agregar una Imagen
+                  </label>
+                </div>
+
+                <div>
+                  <input type="file">
+                </div>
+
+
+              
+              
+
+              <div class="mt-5">
+              <a href="#">
+                <button type="submit" class="border-2 border-black bg-black text-white py-1 w-full rounded-md hover:bg-transparent hover:text-amber-500 duration-300 font-semibold">Agregar Album</button>
+              </a>
+              </div>     
+
+              </form>
+
+                                      
 
             </div>
 
-        </div>
 
-        <div id="contenedor-der" class="content-center justify-center text-center">
-            <h2 class="text-white text-4xl mb-6">There's Really a Wolf</h2>
-            <div class="w-80 bg-black">
-                <img class="w-full" src="../../assets/imagenes/album-wolf.jpg" alt="Album Wolf">
-            </div>
-            <div class="mt-5">
-              <a href="../index.html"
-                ><button
-                  type="submit"
-                  class="border-2 border-black bg-black text-white py-1 w-full rounded-md hover:bg-transparent hover:text-amber-500 duration-300 font-semibold"
-                >
-                  Volver a Inicio
-                </button></a
-              >
-            </div>
+
+
+            
+
         </div>
 
       </div>
